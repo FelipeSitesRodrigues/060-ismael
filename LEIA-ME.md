@@ -32,10 +32,10 @@ Os links de pagamento estão direto no `index.html`, não passam mais pelo JS:
 | Produto | Preço no site | Link |
 |---------|---------------|------|
 | Aula essencial | R$ 47 | https://pay.kiwify.com.br/ojoKl5y |
-| Método Ismaelfodaa | não mostra valor | https://pay.kiwify.com.br/NtTgyqz |
+| Método Ismaelfodaa | R$ 1.000 ou 12x de R$ 103,42 | https://pay.kiwify.com.br/NtTgyqz |
 
-Decisão do Felipe: o valor do método não aparece no site, só no checkout da
-Kiwify. O card dele usa "Acesso vitalício" no lugar do número.
+Os dois cards mostram o valor. O do método traz R$ 1.000 em destaque e a
+linha do parcelamento logo abaixo, no mesmo formato do card da aula.
 
 **Pendência:** os 3 itens do card da aula foram escritos com o pouco que se
 sabia dela ("o essencial do marketing digital, direto ao ponto"). Assim que o
