@@ -11,9 +11,6 @@
   var whatsappFloat = document.getElementById('whatsappFloat');
   if (whatsappFloat) whatsappFloat.setAttribute('href', waLink);
 
-  // Se ainda não existe link de checkout, a oferta também aponta pro WhatsApp
-  var ctaOferta = document.getElementById('ctaOferta');
-  if (ctaOferta) ctaOferta.setAttribute('href', waLink);
 
   // ---------------------------------------------------------------
   // Header: sombra/fundo mais forte ao rolar

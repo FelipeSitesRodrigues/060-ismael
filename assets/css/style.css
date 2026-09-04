@@ -1091,3 +1091,67 @@ h3, h4{
   .hero__actions{ justify-content: center; }
   .hero__proof{ justify-content: center; }
 }
+
+/* ===================================================================
+   Oferta com dois produtos
+   Os dois cards têm exatamente o mesmo peso visual, de propósito:
+   quem decide qual caminho seguir é o visitante.
+=================================================================== */
+.oferta__seal{ display: flex; justify-content: center; margin: 0 0 36px; }
+.oferta__seal .seal{ max-width: 118px; }
+
+.planos{
+  display: grid; gap: 22px;
+  max-width: 900px; margin: 0 auto;
+}
+@media (min-width: 820px){ .planos{ grid-template-columns: 1fr 1fr; } }
+
+.plano{
+  display: flex; flex-direction: column;
+  background: linear-gradient(158deg, var(--black-3), var(--black-2) 62%);
+  border: 1px solid rgba(124,58,237,.3);
+  border-radius: 24px;
+  padding: 34px 28px 30px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+  transition: transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+}
+.plano:hover{
+  transform: translateY(-6px);
+  border-color: var(--glow-line);
+  box-shadow: 0 0 54px rgba(124,58,237,.2), inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.plano__tag{
+  align-self: flex-start;
+  font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--purple-lt);
+  background: rgba(124,58,237,.14);
+  border: 1px solid rgba(124,58,237,.4);
+  padding: 6px 15px; border-radius: var(--pill);
+  margin-bottom: 18px;
+}
+.plano__nome{
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 23px; letter-spacing: -.022em; line-height: 1.15;
+  color: var(--white); margin: 0 0 8px;
+}
+.plano__resumo{ font-size: 14.5px; color: var(--gray); margin: 0 0 24px; }
+
+.plano__valor{
+  font-family: var(--font-display); font-weight: 400;
+  font-size: 44px; line-height: 1; letter-spacing: -.035em;
+  color: var(--white); margin: 0 0 6px;
+}
+.plano__valor small{ font-size: 21px; color: var(--gray); margin-right: 5px; letter-spacing: 0; }
+/* o método não mostra número, então o texto entra menor pra não brigar com o R$47 */
+.plano__valor--texto{ font-size: 27px; letter-spacing: -.02em; }
+.plano__nota{ font-size: 12.5px; color: var(--gray-dim); margin: 0 0 26px; }
+
+.plano .check-list{ margin: 0 0 28px; padding: 0; flex: 1; }
+.plano .check-list li{ font-size: 14.5px; margin-bottom: 13px; align-items: flex-start; }
+.plano .check-list .icon--check{ margin-top: 3px; }
+
+.plano__cta{ width: 100%; }
+.plano__pagamento{ font-size: 12px; color: var(--gray-dim); text-align: center; margin: 14px 0 0; }
+
+.trust-row--center{ justify-content: center; margin-top: 34px; }

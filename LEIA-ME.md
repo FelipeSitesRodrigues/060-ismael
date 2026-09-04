@@ -21,15 +21,25 @@ var WHATSAPP_NUMBER = '5500000000000'; // DDI + DDD + número, só dígitos
 var WHATSAPP_MESSAGE = 'Olá! Vim pelo site e quero entrar na comunidade Ismaelfodaa.';
 ```
 
-Isso atualiza o botão flutuante e o CTA da seção de oferta.
+Isso atualiza o botão flutuante. Os CTAs de compra não passam mais pelo JS,
+vão direto pros links da Kiwify (ver item 2).
 
-## 2. Checkout / preço (bloqueia publicação)
+## 2. Checkout: dois produtos (resolvido)
 
-A seção "O que você recebe" (`id="oferta"`) ainda não tem preço nem link de
-checkout. O botão "Quero entrar agora" aponta pro WhatsApp por padrão
-(`#ctaOferta` em `main.js`). Se o Ismael tiver plataforma de checkout (Hotmart,
-Kiwify, etc.), trocar o `href` desse botão no `index.html` pelo link direto,
-e então remover o trecho que sobrescreve o `href` em `main.js`.
+O site vende dois produtos, com o mesmo peso visual na seção `id="oferta"`.
+Os links de pagamento estão direto no `index.html`, não passam mais pelo JS:
+
+| Produto | Preço no site | Link |
+|---------|---------------|------|
+| Aula essencial | R$ 47 | https://pay.kiwify.com.br/ojoKl5y |
+| Método Ismaelfodaa | não mostra valor | https://pay.kiwify.com.br/NtTgyqz |
+
+Decisão do Felipe: o valor do método não aparece no site, só no checkout da
+Kiwify. O card dele usa "Acesso vitalício" no lugar do número.
+
+**Pendência:** os 3 itens do card da aula foram escritos com o pouco que se
+sabia dela ("o essencial do marketing digital, direto ao ponto"). Assim que o
+Ismael disser o que a aula entrega de fato, trocar essas linhas.
 
 ## 3. Depoimentos
 
@@ -40,9 +50,11 @@ mandar print de aluno com autorização, trocar cada `.testimonial-card` no
 
 ## 4. FAQ
 
-Duas respostas do FAQ estão com placeholder de conteúdo:
+Falta uma resposta:
 - "As aulas são ao vivo ou gravadas?"
-- "Como funciona o pagamento?"
+
+A de pagamento já foi respondida (Kiwify), e entrou uma pergunta nova
+explicando a diferença entre a aula e o método.
 
 Editar direto no `index.html`, dentro do `#faqList`.
 
